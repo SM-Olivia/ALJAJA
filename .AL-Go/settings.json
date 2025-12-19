@@ -1,7 +1,20 @@
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v8.1/.Modules/settings.schema.json",
-  "country": "us",
+  "country": "es",
   "appFolders": [],
   "testFolders": [],
-  "bcptTestFolders": []
+  "bcptTestFolders": [],
+  "DeployTo": {
+    "EnvironmentName": "developments",
+    "continuousDeployment": true,
+    "Scope": "PTE"
+  },
+  "enableCodeCop": true,
+  "enableUICop": true,
+  "workflowDefaultInputs": [
+    {
+      "name": "updateVersionNumber",
+      "value": "+0.1"
+    }
+  ]
 }
